@@ -34,6 +34,19 @@ const Dashboard = () => {
             </Card.Body>
           </Card>
         </Col>
+        <Col md={6} className="mb-4">
+          <Card className='admin-card'>
+            <Card.Body>
+              <Card.Title className='admin-card-title'>View Feedbacks</Card.Title>
+              <Card.Text className='admin-card-text'>
+                Read feedbacks from your audience to improve your platform.
+              </Card.Text>
+              <Link className='admin-card-link' to="/admin/feedback">
+                <Button className='admin-card-link-button' variant="primary">Go to Feedbacks</Button>
+              </Link>
+            </Card.Body>
+          </Card>
+        </Col>
       </Row>
     </Container>
   );

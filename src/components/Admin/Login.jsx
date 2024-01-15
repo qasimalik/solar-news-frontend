@@ -14,7 +14,7 @@ const Login = () => {
 
   const handleLogin = async () => {
     try {
-      const response = await axios.post('https://solar-news-backend.vercel.app//admin/login', {
+      const response = await axios.post('https://solar-news-backend.vercel.app/admin/login', {
         username,
         password,
       });

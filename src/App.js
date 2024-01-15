@@ -12,6 +12,7 @@ import Footer from './components/Footer';
 import FeedbackForm from './components/FeedbackForm'; 
 import ReadArticle from './components/ReadArticle';
 import Dashboard from './components/Admin/Dashboard';
+import Readfeedbacks from './components/Admin/Readfeedbacks';
 
 const App = () => {
 
@@ -35,6 +36,7 @@ const App = () => {
           <Route path="/admin/dashboard" element={<Dashboard />} />  
           <Route path="/admin/article" element={<PostArticle />} />
           <Route path="/admin/video" element={<PostVideo />} />        
+          <Route path="/admin/feedback" element={<Readfeedbacks />} />        
         </Routes>
       </div>
   );
