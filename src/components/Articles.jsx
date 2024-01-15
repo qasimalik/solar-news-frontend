@@ -13,7 +13,7 @@ const ArticleCard = () => {
   const fetchArticles = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:5000/articles/allarticles"
+        "https://solar-news-backend.vercel.app/articles/allarticles"
       );
       const data = response.data;
       setArticles(data);

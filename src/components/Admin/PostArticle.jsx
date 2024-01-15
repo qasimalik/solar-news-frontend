@@ -46,7 +46,7 @@ const PostArticle = () => {
     try {
       setUploadProgress(0);
       const response = await axios.post(
-        "http://localhost:5000/admin/article",
+        "https://solar-news-backend.vercel.app/admin/article",
         bodyData,
         {
           headers: {

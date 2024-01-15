@@ -19,7 +19,7 @@ const FeedbackForm = () => {
     console.log(bodyData);
     try {
       const response = await axios.post(
-        "http://localhost:5000/feedbacks",
+        "https://solar-news-backend.vercel.app/feedbacks",
         bodyData,
         {
           headers: {

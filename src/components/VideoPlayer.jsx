@@ -9,7 +9,7 @@ function VideoPlayer() {
   // Fetch videos from your backend
   const fetchVideos = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/videos/all");
+      const response = await axios.get("https://solar-news-backend.vercel.app/videos/all");
       const data = response.data;
       setVideos(data);
     } catch (error) {

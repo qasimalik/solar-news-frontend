@@ -11,7 +11,7 @@ const ReadArticle = () => {
   const fetchArticle = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:5000/articles/article/${title}`
+        `https://solar-news-backend.vercel.app/articles/article/${title}`
       );
       const data = response.data;
       setArticle(data);
