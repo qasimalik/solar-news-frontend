@@ -1,0 +1,44 @@
+.dashboard-title {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 2.5rem;
+    color: #333;
+  }
+  
+  .admin-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: box-shadow 0.3s;
+  }
+  
+  .admin-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .admin-card-title {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .admin-card-text {
+    color: #666;
+  }
+  
+  .admin-card-link {
+    margin-top: 15px;
+    display: block;
+    text-align: center;
+  }
+  
+  .card-link-button {
+    width: 100%;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .admin-card {
+      margin-bottom: 20px;
+    }
+  }
+  

@@ -1,0 +1,101 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .d-flex {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .about-us {
+    flex: 2;
+    background-color: #f8f9fa;
+    padding: 40px;
+  }
+  
+  .aboutus-title     {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  .aboutus-title h5{
+    font-size: 3rem;
+  }
+  
+  .about-us p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  .feedbackform {
+    flex: 1;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: 20px; 
+    padding: 20px;
+  }
+  
+  .feedback-title {
+    font-size: 2rem;
+    color: #812a92;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .feedbackform form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .feedbackform form label {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  .feedbackform form .form-control {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+  
+  .feedbackform form .form-control:focus {
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  .feedbackform form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .feedbackform form button:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (max-width: 576px) {
+    .d-flex {
+      flex-direction: column;
+    }
+  
+    .feedbackform {
+      margin-left: 0; 
+      margin-top: 20px; 
+    }
+  }
+  
