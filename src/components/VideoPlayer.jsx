@@ -23,7 +23,7 @@ function VideoPlayer() {
 
   return (
     <div id="videos">
-      <h1><b>Featuring Videos</b></h1>
+      <h1 style={{fontStyle: "normal", fontSize: "2rem"}}><b>Featuring Videos</b></h1>
     <Carousel data-bs-theme="dark">
       {videos.map((video, index) => (
         <Carousel.Item key={index}>

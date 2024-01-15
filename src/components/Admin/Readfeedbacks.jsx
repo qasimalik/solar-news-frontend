@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Table } from 'react-bootstrap';
+import "../../static/readfeedbacks.css";
 
 const Readfeedbacks = () => {
   const [feedbacks, setFeedbacks] = useState([]);
@@ -13,7 +14,7 @@ const Readfeedbacks = () => {
 
   return (
     <div className="f-container mt-5">
-      <h2 className="text-center f-text">Feedback List</h2>
+      <h2 className="f-h2">Feedback List</h2>
       <Table striped bordered hover>
         <thead>
           <tr>
