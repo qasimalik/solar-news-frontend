@@ -1,15 +1,25 @@
 import React, { useState, useEffect } from 'react';
 import { Table } from 'react-bootstrap';
+import axios from 'axios';
 import "../../static/readfeedbacks.css";
 
 const Readfeedbacks = () => {
   const [feedbacks, setFeedbacks] = useState([]);
 
+  const fetchFeedbacks = async () => {
+    try {
+      const response = await axios.get(
+        "https://solar-news-backend.vercel.app/feedbacks/feedback"
+      );
+      const data = response.data;
+      setFeedbacks(data);
+    } catch (error) {
+      console.error("Error fetching feedbacks:", error);
+    }
+  };
+
   useEffect(() => {
-    fetch('https://solar-news-backend.vercel.app/feedbacks/feedback')
-      .then((response) => response.json())
-      .then((data) => setFeedbacks(data))
-      .catch((error) => console.error('Error fetching feedbacks:', error));
+    fetchFeedbacks();
   }, []);
 
   return (
