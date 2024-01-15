@@ -1,53 +1,59 @@
 .cardGroup {
-    overflow-y: auto;
-    display: flex;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    flex-direction: row;
-  }
-  
-  .card-deck {
-    display: flex;
-    flex-direction: row;
-    padding-right: 20px;
-  }
+  overflow-y: auto;
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  flex-direction: row;
+}
 
-  .latest-news-heading {
-    font-size: 2rem;
-    color: black;
-    font-weight: bold;
-    margin-bottom: 20px;
+.card-deck {
+  display: flex;
+  flex-direction: row;
+  padding-right: 20px;
+}
+
+.latest-news-heading {
+  font-size: 2rem;
+  color: black;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.article-card {
+  flex: 0 0 auto;
+  width: 300px;
+  margin-bottom: 20px;
+  margin-right: 15px;
+  border: hidden;
+  transition: transform 0.3s ease-in-out;
+  font-size: 1.2rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  &:hover {
+    transform: scale(1.05);
   }
-  
+}
+
+.card-image {
+  object-fit: cover;
+  height: 150px;
+  border: none;
+}
+
+.article-text {
+  padding: 15px;
+  font-size: 1rem;
+  text-wrap: pretty;
+}
+
+@media (max-width: 507px) {
   .article-card {
-    flex: 0 0 auto;
-    width: 300px;
-    margin-right: 15px; 
-    border: hidden;
-    transition: transform 0.3s ease-in-out;
-    font-size: 1.2rem;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis; 
-  
-    &:hover {
-      transform: scale(1.05);
+    width: 100%; 
+  }
+}
 
-    }
-  }
-  
-  .card-image {
-    object-fit: cover;
-    height: 150px;
-    border: none;
-  }
-
-  .article-text {
-    padding: 15px;
-    font-size: 1rem;
-    text-wrap: pretty;
-  }
- 
-  ::-webkit-scrollbar {
-    display: none;
-  }
+::-webkit-scrollbar {
+  display: none;
+}

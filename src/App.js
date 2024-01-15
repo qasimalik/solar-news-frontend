@@ -13,6 +13,7 @@ import FeedbackForm from './components/FeedbackForm';
 import ReadArticle from './components/ReadArticle';
 import Dashboard from './components/Admin/Dashboard';
 import Readfeedbacks from './components/Admin/Readfeedbacks';
+import LatestArticle from './components/LatestArticle';
 
 const App = () => {
 
@@ -25,6 +26,7 @@ const App = () => {
           <Header />
           <Hero />
           <Articles />
+          <LatestArticle />
           <VideoPlayer />
           <FeedbackForm/>
         <Footer/>

@@ -6,7 +6,7 @@ import "../static/article.css";
 import "./ReadArticle";
 import { useNavigate } from "react-router-dom";
 
-const ArticleCard = () => {
+const LatestArticle = () => {
   const [articles, setArticles] = useState([]);
   const navigate = useNavigate();
 
@@ -34,26 +34,28 @@ const ArticleCard = () => {
     <CardGroup className="cardGroup ">
       <Row>
         <Col>
-          <h2 className="latest-news-heading">All News</h2>
-          <div className="card-deck" id="allnews">
-            {articles.map((article) => (
-              <Card
-                className="article-card"
-                key={article._id}
-                onClick={() => handleCardClick(article)}
-              >
-                <Card.Img
-                  className="card-image"
-                  variant="top"
-                  src={article.photo}
-                />
-                <Card.Body>
-                  <Card.Title className="article-text">
-                    <b>{article.title}</b>
-                  </Card.Title>
-                </Card.Body>
-              </Card>
-            ))}
+          <h2 className="latest-news-heading">Latest News</h2>
+          <div className="card-deck" id="latest-news">
+            {articles
+              .sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt))
+              .map((article) => (
+                <Card
+                  className="article-card"
+                  key={article._id}
+                  onClick={() => handleCardClick(article)}
+                >
+                  <Card.Img
+                    className="card-image"
+                    variant="top"
+                    src={article.photo}
+                  />
+                  <Card.Body>
+                    <Card.Title className="article-text">
+                      <b>{article.title}</b>
+                    </Card.Title>
+                  </Card.Body>
+                </Card>
+              ))}
           </div>
         </Col>
       </Row>
@@ -61,4 +63,4 @@ const ArticleCard = () => {
   );
 };
 
-export default ArticleCard;
+export default LatestArticle;
